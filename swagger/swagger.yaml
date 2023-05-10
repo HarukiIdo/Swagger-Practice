@@ -1,0 +1,30 @@
+# swaggerのバージョン
+swagger: "2.0"
+
+# 基本情報
+info:
+  version: 1.0.0
+  title: Swagger Practice
+  description: |
+    - Swagger練習用のファイルです
+
+# リクエスト方式
+schemes:
+  - "http"
+
+# ホスト
+host: localhost:8080
+
+# 基底パス
+
+
+paths:
+  /articles:
+    get:
+      summary: 記事一覧を取得する
+      responses:
+        200:
+          description: Hello World
+          schema:
+            type: array
+      deprecated: false
